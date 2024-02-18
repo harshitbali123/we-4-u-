@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        input[type=text], input[type=email], input[type=password] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .color{
+            color: red;
+        }
+        h2{
+            color: white;
+        }
+        .Registrationform{
+            
+            height: 80vh;
+            width: 80vh;
+            margin-left: 35%;
+            margin-top: 05%;
+        }
+        a{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="Registrationform">
+        <form action="" method="post">
+            <h2>Registration Form</h2>
+            <label for="fname" class="color">First Name</label>
+            <input type="text" id="fname" name="fname" required>
+
+            <label for="lname" class="color">Last Name</label>
+            <input type="text" id="lname" name="lname" required>
+
+            <label for="email" class="color">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password" class="color">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button><a  style="text-decoration: none;" href="./thanking.html">REGISTER</a></button>
+        </form>
+    </div>
+</body>
+</html>

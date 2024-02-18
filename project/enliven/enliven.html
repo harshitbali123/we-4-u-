@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WE 4 U</title>
+    <link rel="stylesheet" href="./enliven.css">
+    <style>body{
+        display: flex;
+        background-color: rgb(255, 238, 0);
+    }
+    /*  */
+    #we_4_u{
+        width: 100%;
+        height: 180vh;
+    }
+    #navbar{
+        width: 100%;
+        height:20px ;
+        position: absolute;
+        background-color: aqua;
+    }
+    #name_of_website{
+        width: 100%;
+        height:  40%;
+        position: absolute;
+        top:22vh ;
+        display: flex;
+        flex-direction: row;
+       justify-content: center;
+       
+        background-color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: 100px;
+        color: blue;
+        animation-name:color_changer ;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+       
+    }
+    
+    @keyframes color_changer {
+        0%{
+            color: blue;
+        }
+        25%{
+            color: aqua;
+        }
+        50%{
+            color: antiquewhite;
+        }
+        75%{
+            color: aquamarine;
+        }
+        100%{
+            color: bisque;
+        }
+    }
+    #temples{
+        width: 100%;
+        height:59vh;
+        position: absolute;
+        top: 19vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* z-index: 1; */
+      
+        background-color: rgb(0, 0, 0);
+    }
+     .religious, .ngo{
+        width:20% ;
+        height: 55%;
+        margin-left: 50px;
+        text-align: center;
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        background: linear-gradient(55deg, #0d0badd2, #3498db,#00ff378c);
+        border: 2px solid #2980b9;
+        overflow: hidden;
+        transition: border-color 0.15s, color 0.23s;
+        
+    }
+    .religious::before,.ngo::before{
+      
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(105deg, #3498db, #ff7f50, #3498db,#00ff37fd);
+          /* background: #00ff4c; */
+          background-size: 400% 400%;
+          animation: animate 3s infinite;
+          z-index: -1;
+    
+    }
+    .religious:hover::before,.ngo:hover::before{
+     
+        border-color: #00ff4c;
+        color: #a6ff00;
+    }
+    
+    @keyframes animate{
+    
+          50%{
+            filter: hue-rotate(350deg);
+          }
+    
+    
+    
+    }
+    
+    #info{
+        width: 100%;
+        height: 180vh;
+        position: absolute;
+        top:490px;
+       background-color: #000000;
+    }
+    .religious_info{
+        width: 600px;
+        height: 20%;
+        background-color: limegreen;
+        margin-top: 22vh;
+        margin-bottom: 12vh;
+        border: 2px solid blue;
+    
+    }
+    
+    .first, .fourth ,.second, .third{
+        border-radius: 24px;
+        cursor: pointer;
+       
+    }
+    .first:hover, .fourth:hover ,.second:hover, .third:hover{
+       scale: 1.1;
+        transition: 0.15s;
+    }
+    .fourth{
+        position: absolute;
+        top: 4vh;
+        right: 20px;
+        /* background-color: #000000; */
+        margin-right: 12ch;
+        width: 34vw;
+        
+    }
+    .first{
+        position: absolute;
+        top: 4vh;
+        width: 34vw;
+        margin-left: 12ch;
+    }
+    .second{
+        position: absolute;
+        top: 44vh;
+        width: 34vw;
+        /* background-color: #000000; */
+        margin-left: 12ch;
+    }
+    .third{
+        position: absolute;
+        top: 44vh;
+        right: 20px;
+        width: 34vw;
+        margin-right: 12ch;
+    }
+    .fifth , .sixth , .seventh{
+        height:45vh ;
+        width: 200px;
+        
+        margin: 0;
+        margin-top: 08%;
+        border-radius: 4%;
+    }
+    #footer{
+        width: 100%;
+        height: 80vh;
+        position: absolute;
+        top: 190vh;
+       display: flex;
+      
+      justify-content: space-around;
+      align-items: center;
+    }
+    .fifth:hover , .sixth:hover , .seventh:hover{
+         scale: 1.1;
+         transition: 0.7s;
+    }
+    #remaining_area{
+        
+        height: 200%;
+        width: 100%;
+        position: absolute;
+       top: 33%;
+       margin: 0px;
+    
+    
+    }
+    
+    
+    #hell{
+        background: #000000 url(./The-Best-50-Website-Preloaders-Around-the-Web-Example-32.gif) no-repeat center center;
+        height: 100vh;
+        width:100%;
+        position: fixed;
+        z-index: 100;
+        background-size:35%;
+    }
+    /* abhinav---------------------------------------------------------------------------*/
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    body{
+       
+        height: 20px;
+    }
+    
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.4s;
+        padding: 40px 100px;
+        z-index: 1;
+    }
+    header.sticky{
+        padding: 20px 100px;
+        background: linear-gradient(40deg,rgba(22, 16, 16, 0.815),rgb(77, 72, 72));
+    }
+    header .logo{
+        position: relative;
+        font-weight: 700;
+        color: #fff;
+        text-decoration: none;
+        font-size: 2em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: 0.4s;
+        margin-left: 35%;
+        z-index: 2;
+    
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        
+        border-radius: 10px;
+        overflow: hidden;
+        width: 50vh;
+        height: 20vh;
+       
+    }.logo h2{
+        z-index: 2;
+    }
+    .logo::before{
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 200%;
+        background: linear-gradient(#00ccff , #d500f9);
+        animation: rotate 5s linear infinite;
+        
+    }
+    .logo::after{
+        content: '';
+        position: absolute;
+        background: #000;
+        inset:5px;
+        border-radius: 16px;
+        
+    }
+    @keyframes rotate {
+        from{
+            transform: rotate(0 deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    
+    
+        
+    }
+    
+    header ul{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header ul li{
+        position: relative;
+        list-style: none;
+    }
+    header ul li a{
+        position: relative;
+        margin: 0 15px;
+        text-decoration: none;
+        color: #fff;
+        letter-spacing: 2px;
+        font-weight: 500px;
+        transition: 0.4s;
+    }
+    .banner{
+        position: relative;
+        width: 100%;
+        height: 120vh;
+        
+         background: #000;
+        background-size: cover;}
+    
+    .banner2{
+        position: relative;
+        width: 100%;
+        height: 80%;
+    
+        background-size: cover;
+    }
+    
+    /* abhinav---------------------------------------------------------------------------*/
+    button{
+        background: transparent ;
+        border: 0px;
+        transition-duration: 0.15s ;
+        padding: 10px;
+        border-radius: 10px;
+       
+    }
+    button:hover{
+        scale: 1.1;
+      
+    }
+    button:active{
+        background-color: rgba(255, 255, 255,0.4);
+    }
+    
+    .giphy-embed{
+        display: flex;
+        align-items: baseline;
+    }
+    .circle1,.circle2,.circle3,.circle4{
+       
+        height: 20vh;
+        width: 20vh;
+        position: absolute;
+        margin: 0px;
+        left: 2%;
+        top: 2%;
+        border-radius: 50%;
+    }
+    img{
+        height: 15vh;
+        width: 15vh;
+        position: absolute;
+        margin: 0px;
+        border-radius: 50%;
+        transition-duration: 0.15s;
+    }
+    img:hover{
+        scale: 1.1;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+       background-color: rgb(4, 75,97);
+       min-height: 100vh;
+    }
+    .address1{
+        margin-left: 150%;
+    }
+    .info1,.info2,.info3,.info4{
+        width: 50%;
+        height: 100%;
+        margin-left: 30%;
+        margin-top: 5%;
+    }</style>
+</head>
+<body>
+    <div id="we_4_u">
+        <div id="navbar">
+            <header>
+                <div class="logo"><h2>Logo</h2></div>
+                    <ul>
+                        
+                        <button class="hell"><li><a href="#">Contact us</a></li></button>
+                        
+                    </ul>
+                </a>
+            </header>
+            <section class="banner"></section>
+            <section class="banner2"></section>
+        </div>
+        <div id="name_of_website">
+
+            <iframe src="https://giphy.com/embed/OnfQbq1M3fb5YcOogn" width="480" height="208" frameBorder="0" margin-left="20"
+            class="giphy-embed" allowFullScreen></iframe><p>
+                <a href="https://giphy.com/gifs/feedingindia-zomatofeedingindia-beahungerhero-OnfQbq1M3fb5YcOogn">
+
+             <iframe src="https://giphy.com/embed/ZHjlG9QIF3JMoktJnT" 
+             width="780" height="207" margin-left="20" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                    <p><a href="https://giphy.com/gifs/feedingindia-zomatofeedingindia-beahungerhero-ZHjlG9QIF3JMoktJnT">
+                    </a></p>                
+
+        </a></p>
+        </div>
+        <div id="remaining_area">
+            <div id="temples">
+                <button  class="religious"><a style="text-decoration: none;"   href="./religious.html"><div><h1>RELIGIOUS</h1></div></a></button>
+                <button class="ngo"><a style="text-decoration: none;"  href="./ngoform.html"><div ><h1>NGO</h1></div></a></button>
+            </div>
+ <div id="info">
+                <div class="religious_info  first"> 
+                    <div class="circle1"><img src="./images/iskcon temple.jpg" alt=""></div>
+                    <div class="info1">Iskcon temple NVCC Pune, Katraj-Kondhwa road, tilekar nagar, Kondhwa budruk, Pune Maharashtra (PIN 411048)</div>
+                </div>
+                <div class="religious_info  second">
+                    <div class="circle2"><img src="./images/ganesh peth gurudwara.jpg" alt=""></div>
+                    <div class="info2">Maharan Pratap road, Ganesh Peth city, Pune, Maharashtra (PIN 411002)</div>
+                </div>
+                <div class="religious_info  third">
+                    <div class="circle3"><img src="./images/gurudwara guru nanak dwar.jpg" alt=""></div>
+                    <div class="info3">Pattinson road, Hulshur, Camp Pune, Maharashtra(PIN 411001)</div>
+                </div>
+                    
+                    <div class="religious_info  fourth">
+                        <div class="circle4"><img src="./images/ISKCON TEMPLE 2.jpg" alt=""></div>
+                        <div class="info4">Colonel Tarapore road, beside Dastoor boys school, Camp, Pune,Maharashtra(PIN 411001)</div>
+                    </div>
+                
+            </div>
+                
+            </div>
+            <div id="footer">
+                <div class="religious_info  fifth"></div>
+                <div class="religious_info  sixth"></div>
+                <div class="religious_info  seventh"></div>
+            </div>
+        </div>
+
+       
+    </div>
+    <div id="hell">
+        <video autoplay  muted loop id="video">
+            <source src="" 
+            type="video/mp4">
+          </video>
+        
+    </div>
+
+    <script>
+        
+        var loader = document.getElementById("hell");
+        window.addEventListener('load',function(){
+            loader.style.display="none";
+        })
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+
+    </script>
+    
+</body>
+
+</html>
